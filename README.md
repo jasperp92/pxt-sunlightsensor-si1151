@@ -1,3 +1,7 @@
+# Sunlight sensor SI1151 extension for Makecode 
+
+This is a beta. The UV-Index values still seem to high.
+
 
 > Diese Seite bei [https://jasperp92.github.io/pxt-sunlightsensor-si1151/](https://jasperp92.github.io/pxt-sunlightsensor-si1151/) öffnen
 

@@ -394,7 +394,7 @@ namespace SI1151 {
 * 
 */
     let si1151 = new SI1151();
-    //% group="sunlight sensor SI1151"
+    //% group="sunlight sensor SI"
     //% block="init sunlight sensor"
     export function initSunlight() {
         //if (!sgp30) {
@@ -405,8 +405,9 @@ namespace SI1151 {
     * get halfword sunlight
     * 
     */
-    //% group="sunlight sensor SI1151"
-    //% block="read visible light"
+    let si1151 = new SI1151();
+    //% group="Sunlight sensor SI1151"
+    //% block="read Light [lm]"
     export function getHalfWord_Visible(): number {
         return Math.round(si1151.ReadHalfWord_VISIBLE());
     }
@@ -415,18 +416,18 @@ namespace SI1151 {
     * get halfword sunlight
     * 
     */
-    //% group="sunlight sensor SI1151"
-    //% block="read IR"
+    //% group="Sunlight sensor SI1151"
+    //% block="read IR [lm]"
     export function getHalfWordIR(): number {
         return Math.round(si1151.ReadHalfWord_IR());
     }
 
-        /**
-    * get halfword uv
-    * 
-    */
-    //% group="sunlight sensor SI1151"
-    //% block="read UV"
+    /**
+* get halfword uv
+* 
+*/
+    //% group="Sunlight sensor SI1151"
+    //% block="read UV [lm]"
     export function getHalfWordUV(): number {
         return Math.round(si1151.ReadHalfWord_UV());
     }
