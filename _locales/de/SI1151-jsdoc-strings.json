@@ -1,0 +1,5 @@
+{
+	"SI1151.getHalfWordUV": "Liest den Ultraviolet Index",
+	"SI1151.getHalfWord_Visible": "Liest die Licht Intensität",
+	"SI1151.getHalfWordIR": "Liest die Infrarot Intensität"
+}

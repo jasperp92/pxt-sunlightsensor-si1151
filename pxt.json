@@ -1,5 +1,5 @@
 {
-    "name": "pxt-sunlightsensor-1151",
+    "name": "pxt-sunlightsensor-si1151",
     "description": "",
     "dependencies": {
         "core": "*"
@@ -8,7 +8,9 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "test.ts"
+        "test.ts",
+        "_locales/de/SI1151-strings.json",
+        "_locales/de/SI1151-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"

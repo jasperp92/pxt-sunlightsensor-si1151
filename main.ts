@@ -393,7 +393,8 @@ namespace SI1151 {
 * init Grove Sunlight module
 * 
 */
-    //% group="sunlight sensor SI"
+    let si1151 = new SI1151();
+    //% group="sunlight sensor SI1151"
     //% block="init sunlight sensor"
     export function initSunlight() {
         //if (!sgp30) {
@@ -404,9 +405,8 @@ namespace SI1151 {
     * get halfword sunlight
     * 
     */
-    let si1151 = new SI1151();
-    //% group="Sunlight sensor SI1151"
-    //% block="read Light [lm]"
+    //% group="sunlight sensor SI1151"
+    //% block="read visible light"
     export function getHalfWord_Visible(): number {
         return Math.round(si1151.ReadHalfWord_VISIBLE());
     }
@@ -415,27 +415,19 @@ namespace SI1151 {
     * get halfword sunlight
     * 
     */
-    //% group="Sunlight sensor SI1151"
-    //% block="read IR [lm]"
+    //% group="sunlight sensor SI1151"
+    //% block="read IR"
     export function getHalfWordIR(): number {
         return Math.round(si1151.ReadHalfWord_IR());
     }
 
-    /**
-* get halfword uv
-* 
-*/
-    //% group="Sunlight sensor SI1151"
-    //% block="read UV [lm]"
+        /**
+    * get halfword uv
+    * 
+    */
+    //% group="sunlight sensor SI1151"
+    //% block="read UV"
     export function getHalfWordUV(): number {
         return Math.round(si1151.ReadHalfWord_UV());
     }
 }
-
-
-SI1151.initSunlight()
-basic.forever(function () {
-    serial.writeLine("Licht:" + SI1151.getHalfWord_Visible())
-    serial.writeLine("IR: " + SI1151.getHalfWordIR())
-    serial.writeLine("UV: " + SI1151.getHalfWordUV())
-})

@@ -1,0 +1,5 @@
+{
+	"SI1151.getHalfWordUV|block": "UV Index",
+	"SI1151.getHalfWord_Visible|block": "Licht Intensität (lm)",
+	"SI1151.getHalfWordIR|block": "IR Intensität (lm)"
+}
