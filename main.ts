@@ -405,9 +405,6 @@ namespace SI1151 {
     * get halfword sunlight
     * 
     */
-    let si1151 = new SI1151();
-    //% group="Sunlight sensor SI1151"
-    //% block="read Light [lm]"
     export function getHalfWord_Visible(): number {
         return Math.round(si1151.ReadHalfWord_VISIBLE());
     }
